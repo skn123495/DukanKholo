@@ -44,11 +44,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Ecommerce",
+      title: "Dukan Kholo",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xFF66CCCE),
-        fontFamily: 'Muli',
+        fontFamily: 'Livvic',
         accentColor: Color(0xFFFF9900),
         appBarTheme: AppBarTheme(
           color: Color(0xFF66CCCE),

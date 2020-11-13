@@ -1,3 +1,4 @@
+import 'package:DukanKholo/constants.dart';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatefulWidget {
@@ -81,10 +82,10 @@ class MyWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       CircleAvatar(
-                        radius: 18,
-                        backgroundColor: Colors.white,
+                        radius: 21,
+                        backgroundColor: PrimaryWhite,
                         child: CircleAvatar(
-                          radius: 18,
+                          radius: 19,
                           backgroundImage: AssetImage('assets/images/user.jpg'),
                         ),
                       ),
@@ -93,13 +94,12 @@ class MyWidget extends StatelessWidget {
                       ),
                       Text('Hello, User',
                           style: TextStyle(
-                              color: Colors.black,
+                              color: PrimaryWhite,
                               fontSize: 20,
                               fontFamily: 'Muli-Bold')),
                     ],
                   ),
-                  decoration:
-                      BoxDecoration(color: Theme.of(context).primaryColor),
+                  decoration: BoxDecoration(color: PrimaryColor),
                   margin: EdgeInsets.all(0.0),
                   padding: EdgeInsets.all(15.0)),
             ),

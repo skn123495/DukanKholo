@@ -40,7 +40,7 @@ class _LoginState extends State<Login> {
         decoration: InputDecoration(
             prefixIcon: Icon(
               Icons.email,
-              color: kPColor,
+              color: PrimaryColor,
             ),
             labelText: 'E-mail'),
       ),
@@ -61,7 +61,7 @@ class _LoginState extends State<Login> {
         decoration: InputDecoration(
           prefixIcon: Icon(
             Icons.lock,
-            color: kPColor,
+            color: PrimaryColor,
           ),
           labelText: 'Password',
         ),
@@ -92,7 +92,7 @@ class _LoginState extends State<Login> {
           margin: EdgeInsets.only(bottom: 20),
           child: RaisedButton(
             elevation: 5.0,
-            color: kPColor,
+            color: PrimaryColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
@@ -141,7 +141,7 @@ class _LoginState extends State<Login> {
             width: 60,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: kPColor,
+              color: PrimaryColor,
               boxShadow: [
                 BoxShadow(
                     color: Colors.black26,
@@ -223,7 +223,7 @@ class _LoginState extends State<Login> {
                 TextSpan(
                   text: 'Sign Up',
                   style: TextStyle(
-                    color: kPColor,
+                    color: PrimaryColor,
                     fontSize: MediaQuery.of(context).size.height / 40,
                     fontWeight: FontWeight.bold,
                   ),
@@ -250,7 +250,7 @@ class _LoginState extends State<Login> {
                 width: MediaQuery.of(context).size.width,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: kPColor,
+                    color: PrimaryColor,
                     borderRadius: BorderRadius.only(
                       bottomLeft: const Radius.circular(70),
                       bottomRight: const Radius.circular(70),

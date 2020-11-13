@@ -7,27 +7,17 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-Widget _buildDivider() {
-  return SizedBox(
-    child: new Container(
-      // margin: new EdgeInsetsDirectional.only(top: 1.0, bottom: 1.0),
-      height: 5.0,
-      color: Colors.grey[300],
-    ),
-  );
-}
-
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: kPColor,
-        iconTheme: new IconThemeData(color: kWhiteColor),
+        backgroundColor: PrimaryColor,
+        iconTheme: new IconThemeData(color: PrimaryWhite),
         centerTitle: true,
         title: Text(
-          "Community App",
-          style: TextStyle(fontWeight: FontWeight.bold, color: kWhiteColor),
+          "Dukan Kholo",
+          style: TextStyle(fontWeight: FontWeight.bold, color: PrimaryWhite),
         ),
         actions: <Widget>[
           IconButton(

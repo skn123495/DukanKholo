@@ -14,14 +14,14 @@ class Onboarding extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25.0),
           ),
-          color: kPColor,
+          color: PrimaryColor,
           padding: EdgeInsets.all(17.0),
           child: Text("Get Started".toUpperCase(),
               style: TextStyle(
                 fontSize: SizeConfig.getSW(context) * 0.052,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 0.5,
-                color: kWhiteColor,
+                color: PrimaryWhite,
               )),
           onPressed: () {
             Navigator.pushNamed(context, "/login");
@@ -44,7 +44,7 @@ class Onboarding extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(top: SizeConfig.getSH(context) * 0.014),
                 child: Text(
-                  'Online Community',
+                  'Dukan Kholo',
                   style: TextStyle(fontSize: SizeConfig.getSH(context) * 0.030),
                 ),
               ),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-const kPColor = Color(0xff2470c7);
-const KAPrimaryColor = Color(0xFF66CCCE);
-const kPGradientColor = LinearGradient(
+const PrimaryColor = Color(0xff2470c7);
+const SecondaryColor = Color(0xFF66CCCE); //Amazon wala color
+
+const PrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [
@@ -13,17 +14,17 @@ const kPGradientColor = LinearGradient(
   ],
 );
 
-const kSecondaryColor = Color(0xFF979797);
-const kTextColor = Color(0xFF757575);
+const DarkGrey = Colors.grey;
+const TextColor = Color(0xFF757575);
 
-const kWhiteColor = Colors.white;
+const PrimaryWhite = Colors.white;
 
-const kAnimationDuration = Duration(milliseconds: 200);
+const KAnimationDuration = Duration(milliseconds: 200);
 
 final headingStyle = TextStyle(
   fontSize: 28,
   fontWeight: FontWeight.bold,
-  color: kPColor,
+  color: PrimaryColor,
   height: 1.5,
 );
 
@@ -49,6 +50,6 @@ final otpInputDecoration = InputDecoration(
 OutlineInputBorder outlineInputBorder() {
   return OutlineInputBorder(
     borderRadius: BorderRadius.circular(25),
-    borderSide: BorderSide(color: kPColor),
+    borderSide: BorderSide(color: PrimaryColor),
   );
 }

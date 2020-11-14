@@ -1,4 +1,5 @@
 import 'package:DukanKholo/constants.dart';
+import 'package:DukanKholo/size_config.dart';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatefulWidget {
@@ -72,14 +73,15 @@ class MyWidget extends StatelessWidget {
         SliverList(
             delegate: SliverChildListDelegate([
           Container(
-            height: 92.0,
+            height: SizeConfig.getSW(context) * 0.3,
             child: InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "/profile");
+                Navigator.popAndPushNamed(context, "/profile");
               },
               child: DrawerHeader(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       CircleAvatar(
                         radius: 21,
@@ -92,11 +94,23 @@ class MyWidget extends StatelessWidget {
                       SizedBox(
                         width: 15,
                       ),
-                      Text('Hello, User',
-                          style: TextStyle(
-                              color: PrimaryWhite,
-                              fontSize: 20,
-                              fontFamily: 'Muli-Bold')),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Text('Sarabjeet Singh',
+                              style: TextStyle(
+                                  color: PrimaryWhite,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: SizeConfig.getSW(context) * 0.042)),
+                          Text(
+                            '8700132026',
+                            style: TextStyle(
+                                color: PrimaryWhite,
+                                fontSize: SizeConfig.getSW(context) * 0.032),
+                          ),
+                        ],
+                      )
                     ],
                   ),
                   decoration: BoxDecoration(color: PrimaryColor),
@@ -113,12 +127,12 @@ class MyWidget extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.grid_on),
             title: Text('Shop by Category'),
-            onTap: () => Navigator.pushNamed(context, "/categories"),
+            onTap: () => Navigator.popAndPushNamed(context, "/categories"),
           ),
           ListTile(
             leading: Icon(Icons.card_giftcard),
             title: Text("Today's Deals"),
-            onTap: () => Navigator.pushNamed(context, "/deals"),
+            onTap: () => Navigator.popAndPushNamed(context, "/deals"),
           ),
           const Divider(
             color: Colors.grey,
@@ -127,17 +141,17 @@ class MyWidget extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.shopping_cart),
             title: Text('Your Orders'),
-            onTap: () => Navigator.pushNamed(context, "/orders"),
+            onTap: () => Navigator.popAndPushNamed(context, "/orders"),
           ),
           ListTile(
             leading: Icon(Icons.favorite),
             title: Text('Your Wishlist'),
-            onTap: () => Navigator.pushNamed(context, "/yourwishlist"),
+            onTap: () => Navigator.popAndPushNamed(context, "/yourwishlist"),
           ),
           ListTile(
             leading: Icon(Icons.notifications),
             title: Text('Notifications'),
-            onTap: () => Navigator.pushNamed(context, "/notifications"),
+            onTap: () => Navigator.popAndPushNamed(context, "/notifications"),
           ),
 
           // ListTile(

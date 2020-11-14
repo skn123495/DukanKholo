@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const PrimaryColor = Color(0xff2470c7);
-const SecondaryColor = Color(0xFF66CCCE); //Amazon wala color
+const SecondaryColor = Color(0xFFEEF5FC); //Amazon wala color
 
 const PrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
@@ -18,6 +18,7 @@ const DarkGrey = Colors.grey;
 const TextColor = Color(0xFF757575);
 
 const PrimaryWhite = Colors.white;
+const PrimaryblackText = Colors.black;
 
 const KAnimationDuration = Duration(milliseconds: 200);
 

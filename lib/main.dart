@@ -1,4 +1,7 @@
+import 'package:DukanKholo/constants.dart';
 import 'package:DukanKholo/data/auth.dart';
+import 'package:DukanKholo/screens/Account/edit_profile.dart';
+import 'package:DukanKholo/screens/Account/user_profile.dart';
 import 'package:DukanKholo/screens/auth/Login/login.dart';
 import 'package:DukanKholo/screens/auth/onboarding/onboarding.dart';
 import 'package:DukanKholo/screens/cart/cart.dart';
@@ -11,8 +14,6 @@ import 'package:DukanKholo/screens/notifications/notifications.dart';
 import 'package:DukanKholo/screens/orders/order-details.dart';
 import 'package:DukanKholo/screens/orders/orders.dart';
 import 'package:DukanKholo/screens/search/search.dart';
-import 'package:DukanKholo/screens/user-profile/edit-profile.dart';
-import 'package:DukanKholo/screens/user-profile/user-profile.dart';
 import 'package:DukanKholo/screens/yourwishlist/yourwishlist.dart';
 import 'package:flutter/material.dart';
 import "package:provider/provider.dart";
@@ -48,6 +49,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xFF66CCCE),
+        iconTheme: IconThemeData(color: PrimaryWhite),
         fontFamily: 'Livvic',
         accentColor: Color(0xFFFF9900),
         appBarTheme: AppBarTheme(

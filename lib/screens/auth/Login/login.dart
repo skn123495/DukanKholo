@@ -15,7 +15,7 @@ class _LoginState extends State<Login> {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 70),
           child: Text(
-            'My community',
+            'Dukan Kholo',
             style: TextStyle(
               fontSize: MediaQuery.of(context).size.height / 25,
               fontWeight: FontWeight.bold,

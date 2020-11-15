@@ -60,11 +60,85 @@ class _HomePageState extends State<HomePage> {
             EnlargeStrategyDemo(),
             _centerShareCard(),
             _centerStepForm(),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  _fourMainFields(Icons.add, 'Add Product'),
+                  _fourMainFields(Icons.business_center, 'Business Profile'),
+                  _fourMainFields(Icons.perm_media, 'Business Card'),
+                  _fourMainFields(Icons.recent_actors, 'Calalogs'),
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(
+                top: SizeConfig.getSH(context) * 0.016,
+                right: SizeConfig.getSH(context) * 0.025,
+                left: SizeConfig.getSH(context) * 0.025,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.only(
+                          right: SizeConfig.getSH(context) * 0.010,
+                        ),
+                        height: SizeConfig.getSH(context) * 0.025,
+                        child: Image(
+                            image:
+                                AssetImage('assets/images/whatsapp_icon.png')),
+                      ),
+                      Text(
+                        'Social Media Posts',
+                        style: TextStyle(
+                            fontSize: SizeConfig.getSW(context) * 0.043,
+                            fontWeight: FontWeight.w600),
+                      ),
+                    ],
+                  ),
+                  Text('View all',
+                      style: TextStyle(
+                        fontSize: SizeConfig.getSW(context) * 0.035,
+                        fontFamily: 'Livvic-Bold',
+                      ))
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
+
+  Widget _fourMainFields(myicons, name) {
+    return Column(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+            top: SizeConfig.getSH(context) * 0.022,
+          ),
+          width: 65,
+          height: 65,
+          decoration: new BoxDecoration(
+            color: PrimaryColor,
+            shape: BoxShape.circle,
+          ),
+          child: Icon(
+            myicons,
+            size: SizeConfig.getSH(context) * 0.028,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 8, bottom: 3),
+          child: Text(name),
+        )
+      ],
+    );
+  }
+  // Widget _four(){}
 
   Widget _centerStepForm() {
     return Center(
@@ -198,15 +272,7 @@ class _HomePageState extends State<HomePage> {
                                 child: Icon(
                               Icons.check,
                               color: PrimaryWhite,
-                            )
-                                // Text(
-                                //   '2',
-                                //   style: TextStyle(
-                                //       fontSize: SizeConfig.getSW(context) * 0.065,
-                                //       color: PrimaryWhite,
-                                //       fontFamily: 'Livvic-Bold'),
-                                // ),
-                                ),
+                            )),
                           ),
                           Expanded(
                             flex: 1,

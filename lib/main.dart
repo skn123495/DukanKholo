@@ -2,6 +2,7 @@ import 'package:DukanKholo/constants.dart';
 import 'package:DukanKholo/data/auth.dart';
 import 'package:DukanKholo/screens/Account/edit_profile.dart';
 import 'package:DukanKholo/screens/Account/user_profile.dart';
+import 'package:DukanKholo/screens/Products/products.dart';
 import 'package:DukanKholo/screens/auth/Login/login.dart';
 import 'package:DukanKholo/screens/auth/onboarding/onboarding.dart';
 import 'package:DukanKholo/screens/cart/cart.dart';
@@ -75,6 +76,7 @@ class _MyAppState extends State<MyApp> {
         "/onboarding": (context) => Onboarding(),
         "/login": (context) => Login(),
         "/home": (context) => Home(),
+        "/products": (context) => Products(),
       },
     );
   }

@@ -1,6 +1,5 @@
 import 'package:DukanKholo/constants.dart';
 import 'package:DukanKholo/size_config.dart';
-import 'package:DukanKholo/widgets/insight-card.dart';
 import 'package:flutter/material.dart';
 
 class UserProfile extends StatefulWidget {

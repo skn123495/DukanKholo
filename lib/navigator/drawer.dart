@@ -126,8 +126,8 @@ class MyWidget extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.grid_on),
-            title: Text('Shop by Category'),
-            onTap: () => Navigator.popAndPushNamed(context, "/categories"),
+            title: Text('Products'),
+            onTap: () => Navigator.popAndPushNamed(context, "/products"),
           ),
           ListTile(
             leading: Icon(Icons.card_giftcard),

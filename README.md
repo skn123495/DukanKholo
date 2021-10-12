@@ -1,6 +1,6 @@
 # DukanKholo
 
-A new flutter online Smart Home project.
+A new flutter online shop project.
 
 ## Getting Started
 

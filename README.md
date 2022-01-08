@@ -12,7 +12,11 @@ This project is a starting point for a Flutter application.
  		width="200" 
  		alt="screenshot"
  	>
- 
+ 	<img 
+ 		src="https://user-images.githubusercontent.com/33257022/136958054-0391ea49-ca04-4f81-bc66-e99a04f53528.png" 
+ 		width="200" 
+ 		alt"screen-recording-add"
+ 	>
  	<img 
  		src="https://user-images.githubusercontent.com/33257022/136958433-4d9eb01f-fb67-45c2-b3f2-b030947bac25.png" 
  		width="200" 

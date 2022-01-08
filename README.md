@@ -6,7 +6,6 @@ A new flutter online shop project.
 
 This project is a starting point for a Flutter application.
 
-
 <div>
  	<img 
  		src="(https://user-images.githubusercontent.com/33257022/136958039-c10e3c07-aad8-45f5-bc9d-e88a5b72dcc2.png" 
@@ -24,6 +23,8 @@ This project is a starting point for a Flutter application.
  		alt"screen-recording-main"
  	>
 </div>
+
+
 
 
 A few resources to get you started if this is your first Flutter project:

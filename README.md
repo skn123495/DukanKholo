@@ -17,11 +17,7 @@ This project is a starting point for a Flutter application.
  		width="200" 
  		alt"screen-recording-add"
  	>
- 	<img 
- 		src="https://user-images.githubusercontent.com/33257022/136958433-4d9eb01f-fb67-45c2-b3f2-b030947bac25.png" 
- 		width="200" 
- 		alt"screen-recording-main"
- 	>
+ 
 </div>
 <br><br><br>
 
